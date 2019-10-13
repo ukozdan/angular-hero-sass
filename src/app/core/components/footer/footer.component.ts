@@ -3,16 +3,12 @@ import { Component, OnInit } from "@angular/core";
 @Component({
   selector: "app-footer",
   template: `
-    <footer class="footer">
-      <div class="container">
-        <div class="content has-text-centered">
-          <p>
-            Made with <3 by
-            <a href="https://twitter.com/chrisoncode">Chris from Scotch</a>
-          </p>
-        </div>
-      </div>
-    </footer>
+  <footer class="fixed-bottom pt-3 bg-white shadow-sm">
+		<div class="container">
+			<p>Cambridge Assessment &copy; <span class="currentYear">{{currentYear}}</span></p>
+		</div>
+	</footer>
+  <!--<a href="https://twitter.com/chrisoncode">Chris from Scotch</a>-->
   `,
   styles: []
 })
