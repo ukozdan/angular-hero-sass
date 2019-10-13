@@ -12,7 +12,7 @@ import { Component } from "@angular/core";
     <app-footer></app-footer>
   `,
   styles: [],
-  templateUrl: "./app.component.html",
+  /templateUrl: "./app.component.html",
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
