@@ -25,6 +25,8 @@
     "@fortawesome/free-brands-svg-icons": "5.11.2",
     "@fortawesome/free-regular-svg-icons": "5.11.2",
     "@fortawesome/free-solid-svg-icons": "5.11.2",
+    "source-sans-pro": "3.6.0",
+    "rubik-font": "0.0.3",
     "rxjs": "6.5.3",
     "tslib": "1.10.0",
     "web-animations-js": "2.3.2",
