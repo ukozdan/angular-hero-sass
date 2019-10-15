@@ -36,7 +36,8 @@ import {
   faExclamationCircle,
   faUsers,
   faUserSecret,
-  faLaptopCode
+  faLaptopCode,
+  faHome
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faSquare as farSquare,
@@ -98,7 +99,8 @@ export class AppModule {
       faGithub,
       faMedium,
       faChevronDown,
-      faChevronDown
+      faChevronDown,
+      faHome
     );
   }
 }
