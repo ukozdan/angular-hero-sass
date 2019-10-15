@@ -23,7 +23,7 @@ import { ContactComponent } from "./contact/contact.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 // Font Awesome
-import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+/*import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faSquare,
@@ -51,7 +51,11 @@ import {
   faStackOverflow,
   faGithub,
   faMedium
-} from "@fortawesome/free-brands-svg-icons";
+} from "@fortawesome/free-brands-svg-icons";*/
+
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
 
 @NgModule({
   imports: [
@@ -83,7 +87,7 @@ import {
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  constructor() {
+  /*constructor() {
     library.add(
       faSquare,
       faCheckSquare,
@@ -110,6 +114,9 @@ export class AppModule {
       farAddressCard,
       faUser
     );
+  }*/
+  constructor(library: FaIconLibrary) {
+    library.addIconPacks(fas, far);
   }
 }
 
