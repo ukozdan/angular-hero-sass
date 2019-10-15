@@ -8,16 +8,54 @@ import { Injectable } from "@angular/core";
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const heroes = [
-      { id: 11, name: "Dr Nice" },
-      { id: 12, name: "Narco" },
-      { id: 13, name: "Bombasto" },
-      { id: 14, name: "Celeritas" },
-      { id: 15, name: "Magneta" },
-      { id: 16, name: "RubberMan" },
-      { id: 17, name: "Dynama" },
-      { id: 18, name: "Dr IQ" },
-      { id: 19, name: "Magma" },
-      { id: 20, name: "Tornado" }
+      {
+        id: 1,
+        name: "Incident",
+        itemCssClass: "",
+        itemHeaderCssClass: "bg-ca-orange text-white",
+        itemIconCssClass: "exclamation-circle",
+        itemHeaderText: "Incident",
+        itemBodyCssClass: "",
+        itemBodyText: "Report a Security or suspicious Incident.",
+        itemFooterCssClass: "",
+        itemFooterText: "Go"
+      },
+      {
+        id: 2,
+        name: "Assistance",
+        itemCssClass: "",
+        itemHeaderCssClass: "",
+        itemIconCssClass: "",
+        itemHeaderText: "",
+        itemBodyCssClass: "",
+        itemBodyText: "",
+        itemFooterCssClass: "",
+        itemFooterText: ""
+      },
+      {
+        id: 3,
+        name: "Pen-Test",
+        itemCssClass: "",
+        itemHeaderCssClass: "",
+        itemIconCssClass: "",
+        itemHeaderText: "",
+        itemBodyCssClass: "",
+        itemBodyText: "",
+        itemFooterCssClass: "",
+        itemFooterText: ""
+      },
+      {
+        id: 4,
+        name: "Quick-Check",
+        itemCssClass: "",
+        itemHeaderCssClass: "",
+        itemIconCssClass: "",
+        itemHeaderText: "",
+        itemBodyCssClass: "",
+        itemBodyText: "",
+        itemFooterCssClass: "",
+        itemFooterText: ""
+      }
     ];
     return { heroes };
   }

@@ -1,12 +1,15 @@
 <h3>Top Heroes</h3>
 <div class="card-deck">
-	<div class="card" *ngFor="let hero of heroes">
-		<div class="card-header">
-			<h4>{{hero.name}}</h4>
+	<div class="card mb-4 shadow-sm animated scaleUp" *ngFor="let hero of heroes">
+		<div class="card-header py-4 border-bottom-0 align-items-center justfy-content-center text-center {{hero.itemHeaderCssClass}}">
+      <p>{{hero.itemIconCssClass}}</p>
+			<h2 class="card-title font-weight-bold text-center">{{hero.itemHeaderText}}</h2>
 		</div>
 		<div class="card-body">
-
-			<a href="#" class="btn btn-primary stretched-link" routerLink="/detail/{{hero.id}}">Go</a>
+        <p class="card-text h5">{{hero.itemBodyText}}</p>
+		</div>
+    <div class="card-footer py-4 bg-transparent border-top-0 text-center">
+			<a href="#" class="btn btn-dark btn-lg btn-block stretched-link" routerLink="/detail/{{hero.id}}">{{hero.itemFooterText}}</a>
 		</div>
 	</div>
 </div>
