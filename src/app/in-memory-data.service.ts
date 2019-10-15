@@ -24,37 +24,37 @@ export class InMemoryDataService implements InMemoryDbService {
         id: 2,
         name: "Assistance",
         itemCssClass: "",
-        itemHeaderCssClass: "",
-        itemIconCssClass: "",
-        itemHeaderText: "",
+        itemHeaderCssClass: "bg-ca-purple text-white",
+        itemIconCssClass: "users",
+        itemHeaderText: "Assistance",
         itemBodyCssClass: "",
-        itemBodyText: "",
+        itemBodyText: "Get assistance from our security team.",
         itemFooterCssClass: "",
-        itemFooterText: ""
+        itemFooterText: "Go"
       },
       {
         id: 3,
         name: "Pen-Test",
         itemCssClass: "",
-        itemHeaderCssClass: "",
-        itemIconCssClass: "",
-        itemHeaderText: "",
+        itemHeaderCssClass: "bg-ca-blue text-white",
+        itemIconCssClass: "user-secret",
+        itemHeaderText: "Pen-Test",
         itemBodyCssClass: "",
-        itemBodyText: "",
+        itemBodyText: "Check a project for vulnerabilities.",
         itemFooterCssClass: "",
-        itemFooterText: ""
+        itemFooterText: "Go"
       },
       {
         id: 4,
         name: "Quick-Check",
         itemCssClass: "",
-        itemHeaderCssClass: "",
-        itemIconCssClass: "",
-        itemHeaderText: "",
+        itemHeaderCssClass: "bg-ca-green text-white",
+        itemIconCssClass: "laptop-code",
+        itemHeaderText: "Quick-Check",
         itemBodyCssClass: "",
-        itemBodyText: "",
+        itemBodyText: "Run a security check on a web-app.",
         itemFooterCssClass: "",
-        itemFooterText: ""
+        itemFooterText: "Go"
       }
     ];
     return { heroes };
