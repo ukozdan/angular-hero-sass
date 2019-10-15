@@ -2,7 +2,7 @@
 <div class="card-deck">
 	<div class="card mb-4 shadow-sm animated scaleUp" *ngFor="let hero of heroes">
 		<div class="card-header py-4 border-bottom-0 align-items-center justfy-content-center text-center {{hero.itemHeaderCssClass}}">
-      <p>{{hero.itemIconCssClass}}</p>
+      <fa-icon [icon]="['fas', hero.itemIconCssClass]" class="fa-5x mb-3"></fa-icon>
 			<h2 class="card-title font-weight-bold text-center">{{hero.itemHeaderText}}</h2>
 		</div>
 		<div class="card-body">

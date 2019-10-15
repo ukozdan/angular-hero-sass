@@ -16,11 +16,37 @@ import { HeroesComponent } from "./heroes/heroes.component";
 import { HeroSearchComponent } from "./hero-search/hero-search.component";
 import { MessagesComponent } from "./messages/messages.component";
 
-import { CoreModule } from './core/core.module';
-import { HomeComponent } from './home/home.component';
-import { ContactComponent } from './contact/contact.component';
+import { CoreModule } from "./core/core.module";
+import { HomeComponent } from "./home/home.component";
+import { ContactComponent } from "./contact/contact.component";
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+
+// Font Awesome
+import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faSquare,
+  faCheckSquare,
+  faChevronDown,
+  faEnvelope,
+  faPhoneAlt,
+  faAddressCard,
+  faSignOutAlt,
+  faExclamationCircle,
+  faUsers,
+  faUserSecret,
+  faLaptopCode
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faSquare as farSquare,
+  faCheckSquare as farCheckSquare
+} from "@fortawesome/free-regular-svg-icons";
+import {
+  faStackOverflow,
+  faGithub,
+  faMedium
+} from "@fortawesome/free-brands-svg-icons";
 
 @NgModule({
   imports: [
@@ -30,6 +56,7 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
     NgbModule,
     HttpClientModule,
     CoreModule,
+    FontAwesomeModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
@@ -50,7 +77,31 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+  constructor() {
+    library.add(
+      faSquare,
+      faCheckSquare,
+      farSquare,
+      farCheckSquare,
+      faEnvelope,
+      faPhoneAlt,
+      faAddressCard,
+      faSignOutAlt,
+      faExclamationCircle,
+      faUsers,
+      faUserSecret,
+      faLaptopCode,
+      farCheckSquare,
+      faChevronDown,
+      faStackOverflow,
+      faGithub,
+      faMedium,
+      faChevronDown,
+      faChevronDown
+    );
+  }
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.
