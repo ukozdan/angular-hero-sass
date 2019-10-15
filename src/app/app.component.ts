@@ -24,6 +24,13 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   title = "Tour of Heroes";
+  send_date = new Date();
+  formattedDate: any;
+  constructor() {
+    this.send_date.setMonth(this.send_date.getMonth() + 8);
+    this.formattedDate = this.send_date.toISOString().slice(0, 10);
+    console.log(this.formattedDate);
+  }
 }
 
 /*

@@ -37,11 +37,14 @@ import {
   faUsers,
   faUserSecret,
   faLaptopCode,
-  faHome
+  faHome,
+  faCoffee,
+  faEye
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faSquare as farSquare,
-  faCheckSquare as farCheckSquare
+  faCheckSquare as farCheckSquare,
+  faAddressCard as farAddressCard,
 } from "@fortawesome/free-regular-svg-icons";
 import {
   faStackOverflow,
@@ -100,7 +103,10 @@ export class AppModule {
       faMedium,
       faChevronDown,
       faChevronDown,
-      faHome
+      faHome,
+      faCoffee,
+      faEye,
+      farAddressCard
     );
   }
 }
