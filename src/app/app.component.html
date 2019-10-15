@@ -1,11 +1,24 @@
-<h1>{{title}}</h1>
+<!--<h1>{{title}}</h1>
 <nav>
 	<a routerLink="/dashboard">Dashboard</a>
 	<a routerLink="/heroes">Heroes</a>
 </nav>
 <router-outlet></router-outlet>
-<app-messages></app-messages>
+<app-messages></app-messages>-->
 
+<!-- header -->
+<app-header></app-header>
+<main class="d-flex flex-fill pb-5 mb-5">
+	<div class="container align-self-center">
+		<div class="container">
+			<!-- routes will be rendered here -->
+			<router-outlet></router-outlet>
+			<app-messages></app-messages>
+		</div>
+	</div>
+</main>
+<!-- footer -->
+<app-footer></app-footer>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

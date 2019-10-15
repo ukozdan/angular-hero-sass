@@ -39,12 +39,13 @@ import {
   faLaptopCode,
   faHome,
   faCoffee,
-  faEye
+  faEye,
+  faUser
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faSquare as farSquare,
   faCheckSquare as farCheckSquare,
-  faAddressCard as farAddressCard,
+  faAddressCard as farAddressCard
 } from "@fortawesome/free-regular-svg-icons";
 import {
   faStackOverflow,
@@ -106,7 +107,8 @@ export class AppModule {
       faHome,
       faCoffee,
       faEye,
-      farAddressCard
+      farAddressCard,
+      faUser
     );
   }
 }

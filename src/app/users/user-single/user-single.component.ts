@@ -4,17 +4,10 @@ import { UserService } from "../../core/services/user.service";
 
 @Component({
   selector: "app-user-single",
-  template: `
-    <section class="section">
-      <div class="container">
-        <div class="card" *ngIf="user">
-          <img [src]="user.avatar_url" />
-          <h2>{{ user.login }}</h2>
-        </div>
-      </div>
-    </section>
-  `,
-  styles: []
+  // template: ``,
+  templateUrl: "./user-single.component.html",
+  // styles: [],
+  styleUrls: ["./user-single.component.scss"]
 })
 export class UserSingleComponent implements OnInit {
   user; // property to hold our user when we eventually grab them from github api
