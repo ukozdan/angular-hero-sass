@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;display=swap");
+//@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rubik:500&amp;display=swap");
-//@import "~bootstrap/scss/bootstrap";
+@import "~source-sans-pro/source-sans-pro.css";
+@import "~font-awesome/css/all.css";
 //@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css");
 @import "~animate.css/animate.css";
 
@@ -247,6 +248,6 @@ to {transform: scale(1);}
 // icons
 
 .eye {
-  margin-top: -.65rem;
+  margin-top: -.3rem; /* was -0.65rem */
   margin-left: -0.15rem;
 }

@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/source-sans-pro/source-sans-pro.css",
               "node_modules/bootstrap/scss/bootstrap.scss",
               "src/styles.scss"
             ],
