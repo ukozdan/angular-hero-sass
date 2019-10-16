@@ -23,8 +23,7 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/source-sans-pro/source-sans-pro.css",
-              "node_modules/@openfonts/rubik_all/index.css",
+
               "node_modules/bootstrap/scss/bootstrap.scss",
               "node_modules/animate.css/animate.css",
               "src/styles.scss"
