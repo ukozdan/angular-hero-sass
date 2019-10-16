@@ -32,17 +32,17 @@
 						</li>
 					</ul>
 					<ul class="navbar-nav">
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<fa-icon [icon]="['fas', 'user']"></fa-icon> <span>Daniel Sanders</span>
+						<li class="nav-item dropdown" ngbDropdown>
+							<a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink2" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>
+								<fa-icon [icon]="['fas', 'user']"></fa-icon> <span class="d-inline-block ml-2">Daniel Sanders</span>
 							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<a class="dropdown-item" href="/logout.php">
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2" ngbDropdownMenu>
+								<a class="dropdown-item" href="" ngbDropdownItem>
 									<fa-icon [icon]="['fas', 'address-card']"></fa-icon>
 									<span>Profile</span>
 								</a>
-								<a class="dropdown-item" href="/logout.php">
+								<a class="dropdown-item" href="" ngbDropdownItem>
 									<fa-icon [icon]="['fas', 'sign-out-alt']"></fa-icon>
 									<span>Log out</span>
 								</a>
@@ -52,7 +52,6 @@
 				</div>
 			</div>
 		</nav>
-
 
 		<header class="branding pt-4 bg-white">
 			<div class="container">
