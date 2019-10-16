@@ -1,29 +1,8 @@
 <div class="sticky-top">
 	<div class="shadow-sm">
 
-
-		<!--<nav class="quick-nav navbar navbar-expand-lg navbar-dark bg-ca-black bg-dark">
-			<button class="navbar-toggler hidden-sm-up" type="button" (click)="collapsed = !collapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" [attr.aria-expanded]="!collapsed" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-			<div [class.collapse]="!collapsed" class="collapse navbar-collapse" id="navbarsDefault">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item dropdown" ngbDropdown>
-						<a class="nav-link dropdown-toggle" id="id01" href="#" ngbDropdownToggle>Files</a>
-						<div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
-							<a ngbDropdownItem href="#">HTML</a>
-							<a ngbDropdownItem href="#">TS</a>
-							<a ngbDropdownItem href="#">JS</a>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</nav>-->
-
-
 		<nav class="quick-nav navbar navbar-expand-lg navbar-dark bg-ca-black bg-dark">
 			<div class="container">
-
 				<button
               class="navbar-toggler"
               type="button"
@@ -38,7 +17,8 @@
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item dropdown" ngbDropdown>
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>Contact us</a>
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+								ngbDropdownToggle>Contact us</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" ngbDropdownMenu>
 								<a ngbDropdownItem href="tel:+441223553543">
 									<fa-icon [icon]="['fas', 'phone-alt']"></fa-icon>
@@ -111,12 +91,12 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-6 d-flex align-self-center">
-						<p class="h1 font-rubik m-0">
-							<span class="fa-stack h4 d-inline-flex align-items-center">
-                    <fa-icon [icon]="['fas', 'coffee']" class="fa-2x fa-stack-2x"></fa-icon>
-                    <fa-icon [icon]="['far', 'eye']" class="fa-1x fa-stack-1x fa-inverse "></fa-icon>
+						<p class="h1 font-rubik m-0 d-flex align-items-center">
+							<span class="fa-stack h4 mb-0 d-inline-flex align-items-center">
+                <fa-icon [icon]="['fas', 'coffee']" class="fa-2x fa-stack-2x"></fa-icon>
+                <fa-icon [icon]="['far', 'eye']" class="fa-1x fa-stack-1x fa-inverse eye"></fa-icon>
               </span>
-							Security
+							<span class="d-inline-block ml-2">Security</span>
 						</p>
 					</div>
 					<div class="col-6 d-flex justify-content-end align-self-center">

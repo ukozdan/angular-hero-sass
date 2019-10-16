@@ -22,6 +22,8 @@ import { ContactComponent } from "./contact/contact.component";
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
+import { FontService } from './font.service';
+
 import {
   FontAwesomeModule,
   FaIconLibrary
@@ -56,7 +58,8 @@ import { far } from "@fortawesome/free-regular-svg-icons";
     HomeComponent,
     ContactComponent
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [FontService]
 })
 export class AppModule {
   constructor(library: FaIconLibrary) {
