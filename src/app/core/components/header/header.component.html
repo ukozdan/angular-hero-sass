@@ -53,39 +53,6 @@
 			</div>
 		</nav>
 
-		<nav class="quick-nav navbar navbar-expand-lg navbar-dark bg-ca-black bg-dark">
-			<div class="container">
-				<button
-              class="navbar-toggler"
-              type="button"
-              aria-controls="navbarContent"
-              [attr.aria-expanded]="!collapsed"
-              aria-label="Toggle navigation"
-              (click)="collapsed = !collapsed"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-				<div class="navbar-collapse" [class.collapse]="!collapsed" id="navbarContent">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" routerLink="">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" routerLink="contact">Contact</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" routerLink="users">Users</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" routerLink="/dashboard">Dashboard</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" routerLink="/heroes">Heroes</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
 
 		<header class="branding pt-4 bg-white">
 			<div class="container">
@@ -125,7 +92,7 @@
 				<div class="collapse navbar-collapse" id="navbarNavDropdown2">
 					<ul class="navbar-nav">
 						<li class="nav-item active">
-							<a class="nav-link pb-2 font-weight-bold" href="#">Home
+							<a class="nav-link pb-2 font-weight-bold" href="#" routerLink="/dashboard">Home
 								<span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item dropdown megamenu position-static">
@@ -188,7 +155,7 @@
 						</li>
 						<li class="nav-item dropdown megamenu position-static">
 							<a id="megamenu2" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-								class="nav-link dropdown-toggle pb-2 font-weight-bold">Assistance</a>
+								class="nav-link dropdown-toggle pb-2 font-weight-bold" routerLink="contact">Assistance</a>
 							<div aria-labelledby="megamenu2"
 								class="dropdown-menu w-100 bg-transparent border-0 p-0 m-0">
 								<div class="container">
@@ -286,7 +253,7 @@
 						</li>
 						<li class="nav-item dropdown megamenu position-static">
 							<a id="megamenu3" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-								class="nav-link dropdown-toggle pb-2 font-weight-bold">Pen-Test</a>
+								class="nav-link dropdown-toggle pb-2 font-weight-bold" routerLink="users">Pen-Test</a>
 							<div aria-labelledby="megamenu3"
 								class="dropdown-menu w-100 bg-transparent border-0 p-0 m-0">
 								<div class="container">
@@ -344,7 +311,7 @@
 						</li>
 						<li class="nav-item dropdown megamenu position-static">
 							<a id="megamenu4" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-								class="nav-link dropdown-toggle pb-2 font-weight-bold">Quick-Check</a>
+								class="nav-link dropdown-toggle pb-2 font-weight-bold" routerLink="/heroes">Quick-Check</a>
 							<div aria-labelledby="megamenu4"
 								class="dropdown-menu w-100 bg-transparent border-0 p-0 m-0">
 								<div class="container">
