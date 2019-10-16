@@ -22,40 +22,12 @@ import { ContactComponent } from "./contact/contact.component";
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
-// Font Awesome
-/*import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
-import { library } from "@fortawesome/fontawesome-svg-core";
 import {
-  faSquare,
-  faCheckSquare,
-  faChevronDown,
-  faEnvelope,
-  faPhoneAlt,
-  faAddressCard,
-  faSignOutAlt,
-  faExclamationCircle,
-  faUsers,
-  faUserSecret,
-  faLaptopCode,
-  faHome,
-  faCoffee,
-  faEye,
-  faUser
-} from "@fortawesome/free-solid-svg-icons";
-import {
-  faSquare as farSquare,
-  faCheckSquare as farCheckSquare,
-  faAddressCard as farAddressCard
-} from "@fortawesome/free-regular-svg-icons";
-import {
-  faStackOverflow,
-  faGithub,
-  faMedium
-} from "@fortawesome/free-brands-svg-icons";*/
-
-import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import { far } from '@fortawesome/free-regular-svg-icons';
+  FontAwesomeModule,
+  FaIconLibrary
+} from "@fortawesome/angular-fontawesome";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { far } from "@fortawesome/free-regular-svg-icons";
 
 @NgModule({
   imports: [
@@ -87,34 +59,6 @@ import { far } from '@fortawesome/free-regular-svg-icons';
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  /*constructor() {
-    library.add(
-      faSquare,
-      faCheckSquare,
-      farSquare,
-      farCheckSquare,
-      faEnvelope,
-      faPhoneAlt,
-      faAddressCard,
-      faSignOutAlt,
-      faExclamationCircle,
-      faUsers,
-      faUserSecret,
-      faLaptopCode,
-      farCheckSquare,
-      faChevronDown,
-      faStackOverflow,
-      faGithub,
-      faMedium,
-      faChevronDown,
-      faChevronDown,
-      faHome,
-      faCoffee,
-      faEye,
-      farAddressCard,
-      faUser
-    );
-  }*/
   constructor(library: FaIconLibrary) {
     library.addIconPacks(fas, far);
   }
