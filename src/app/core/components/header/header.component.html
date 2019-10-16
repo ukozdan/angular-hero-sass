@@ -1,17 +1,29 @@
 <div class="sticky-top">
 	<div class="shadow-sm">
 
-		<!--<div ngbDropdown class="d-inline-block">
-			<button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
-			<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-				<button ngbDropdownItem>Action - 1</button>
-				<button ngbDropdownItem>Another Action</button>
-				<button ngbDropdownItem>Something else is here</button>
+
+		<!--<nav class="quick-nav navbar navbar-expand-lg navbar-dark bg-ca-black bg-dark">
+			<button class="navbar-toggler hidden-sm-up" type="button" (click)="collapsed = !collapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" [attr.aria-expanded]="!collapsed" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+			<div [class.collapse]="!collapsed" class="collapse navbar-collapse" id="navbarsDefault">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown" ngbDropdown>
+						<a class="nav-link dropdown-toggle" id="id01" href="#" ngbDropdownToggle>Files</a>
+						<div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+							<a ngbDropdownItem href="#">HTML</a>
+							<a ngbDropdownItem href="#">TS</a>
+							<a ngbDropdownItem href="#">JS</a>
+						</div>
+					</li>
+				</ul>
 			</div>
-		</div>-
+		</nav>-->
+
 
 		<nav class="quick-nav navbar navbar-expand-lg navbar-dark bg-ca-black bg-dark">
 			<div class="container">
+
 				<button
               class="navbar-toggler"
               type="button"
@@ -24,15 +36,15 @@
             </button>
 				<div class="navbar-collapse" [class.collapse]="!collapsed" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
-						<li class="nav-item dropdown">
+						<li class="nav-item dropdown" ngbDropdown>
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact us</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<a class="dropdown-item" href="tel:+441223553543">
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>Contact us</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" ngbDropdownMenu>
+								<a ngbDropdownItem href="tel:+441223553543">
 									<fa-icon [icon]="['fas', 'phone-alt']"></fa-icon>
 									<span>+441223553543</span>
 								</a>
-								<a class="dropdown-item" href="mailto:groupsecurity@cambridgeassessment.org.uk">
+								<a ngbDropdownItem href="mailto:groupsecurity@cambridgeassessment.org.uk">
 									<fa-icon [icon]="['fas', 'envelope']"></fa-icon>
 									<span>groupsecurity@cambridgeassessment.org.uk</span>
 								</a>
@@ -102,7 +114,7 @@
 						<p class="h1 font-rubik m-0">
 							<span class="fa-stack h4 d-inline-flex align-items-center">
                     <fa-icon [icon]="['fas', 'coffee']" class="fa-stack-2x"></fa-icon>
-                    <fa-icon [icon]="['far', 'eye']" class="fa-stack-1x fa-inverse" style="margin-top:-.65rem;margin-left:-0.15rem;"></fa-icon>
+                    <fa-icon [icon]="['far', 'eye']" class="fa-stack-1x fa-inverse eye"></fa-icon>
                   </span>
 							Security
 						</p>
