@@ -24,7 +24,9 @@
             ],
             "styles": [
               "node_modules/source-sans-pro/source-sans-pro.css",
+              "node_modules/typeface-rubik/index.css",
               "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/animate.css/animate.css",
               "src/styles.scss"
             ],
             "scripts": []
