@@ -18,13 +18,13 @@
 						<li class="nav-item dropdown" ngbDropdown>
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-								ngbDropdownToggle>Contact us</a>
+								ngbDropdownToggle routerLink="">Contact us</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" ngbDropdownMenu>
-								<a ngbDropdownItem href="tel:+441223553543">
+								<a ngbDropdownItem href="tel:+441223553543" routerLink="">
 									<fa-icon [icon]="['fas', 'phone-alt']"></fa-icon>
 									<span>+441223553543</span>
 								</a>
-								<a ngbDropdownItem href="mailto:groupsecurity@cambridgeassessment.org.uk">
+								<a ngbDropdownItem href="mailto:groupsecurity@cambridgeassessment.org.uk" routerLink="">
 									<fa-icon [icon]="['fas', 'envelope']"></fa-icon>
 									<span>groupsecurity@cambridgeassessment.org.uk</span>
 								</a>
@@ -34,15 +34,15 @@
 					<ul class="navbar-nav">
 						<li class="nav-item dropdown" ngbDropdown>
 							<a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink2" role="button"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbDropdownToggle >
 								<fa-icon [icon]="['fas', 'user']"></fa-icon> <span class="d-inline-block ml-2">Daniel Sanders</span>
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2" ngbDropdownMenu>
-								<a class="dropdown-item" href="" ngbDropdownItem>
+								<a class="dropdown-item" href="" ngbDropdownItem routerLink="">
 									<fa-icon [icon]="['fas', 'address-card']"></fa-icon>
 									<span>Profile</span>
 								</a>
-								<a class="dropdown-item" href="" ngbDropdownItem>
+								<a class="dropdown-item" href="" ngbDropdownItem routerLink="">
 									<fa-icon [icon]="['fas', 'sign-out-alt']"></fa-icon>
 									<span>Log out</span>
 								</a>
@@ -96,7 +96,7 @@
 						</li>
 						<li class="nav-item dropdown megamenu position-static">
 							<a id="megamenu1" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-								class="nav-link dropdown-toggle pb-2 font-weight-bold">Incident</a>
+								class="nav-link dropdown-toggle pb-2 font-weight-bold" routerLink="">Incident</a>
 							<div aria-labelledby="megamenu1"
 								class="dropdown-menu w-100 bg-transparent border-0 p-0 m-0">
 								<div class="container">
