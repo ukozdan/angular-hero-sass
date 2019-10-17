@@ -21,11 +21,11 @@
 								ngbDropdownToggle routerLink="">Contact us</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" ngbDropdownMenu>
 								<a ngbDropdownItem href="tel:+441223553543" routerLink="">
-									<fa-icon [icon]="['fas', 'phone-alt']"></fa-icon>
+									<fa-icon [icon]="['fas', 'phone-alt']" ></fa-icon>
 									<span>+441223553543</span>
 								</a>
 								<a ngbDropdownItem href="mailto:groupsecurity@cambridgeassessment.org.uk" routerLink="">
-									<fa-icon [icon]="['fas', 'envelope']"></fa-icon>
+									<fa-icon [icon]="['fas', 'envelope']" class="mr-2"></fa-icon>
 									<span>groupsecurity@cambridgeassessment.org.uk</span>
 								</a>
 							</div>
@@ -35,15 +35,16 @@
 						<li class="nav-item dropdown" ngbDropdown>
 							<a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink2" role="button"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbDropdownToggle routerLink="">
-								<fa-icon [icon]="['fas', 'user']"></fa-icon> <span class="d-inline-block ml-2">Daniel Sanders</span>
+								<fa-icon [icon]="['fas', 'user']" class="mr-2"></fa-icon>
+                <span class="d-inline-block ml-2">Daniel Sanders</span>
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2" ngbDropdownMenu>
 								<a class="dropdown-item" href="" ngbDropdownItem routerLink="">
-									<fa-icon [icon]="['fas', 'address-card']"></fa-icon>
+									<fa-icon [icon]="['fas', 'address-card']" class="mr-2"></fa-icon>
 									<span>Profile</span>
 								</a>
 								<a class="dropdown-item" href="" ngbDropdownItem routerLink="">
-									<fa-icon [icon]="['fas', 'sign-out-alt']"></fa-icon>
+									<fa-icon [icon]="['fas', 'sign-out-alt']" class="mr-2"></fa-icon>
 									<span>Log out</span>
 								</a>
 							</div>
@@ -58,11 +59,11 @@
 				<div class="row">
 					<div class="col-6 d-flex align-self-center">
 						<p class="h1 font-rubik m-0 d-flex align-items-center">
-							<span class="fa-stack h4 mb-0 d-inline-flex align-items-center">
+							<span class="fa-stack h4 mb-0 d-inline-flex align-items-center mr-2">
                 <fa-icon [icon]="['fas', 'coffee']" class="fa-2x fa-stack-2x d-flex align-items-center justify-content-center"></fa-icon>
                 <fa-icon [icon]="['far', 'eye']" class="fa-1x fa-stack-1x fa-inverse d-flex align-items-center justify-content-center mr-1 mb-2"></fa-icon>
               </span>
-							<span class="d-inline-block ml-2">Security</span>
+							<span class="d-inline-block">Security</span>
 						</p>
 					</div>
 					<div class="col-6 d-flex justify-content-end align-self-center">
